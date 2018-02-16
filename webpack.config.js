@@ -47,6 +47,7 @@ module.exports = {
   devServer: {
     compress: true,
     port: 9000,
+    hot: !isProduction,
     before: app => {
       app.get('/', (req, res, next) => {
         readFileP(join(__dirname, 'src/index.html'), {encoding: 'utf8'})

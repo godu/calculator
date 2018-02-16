@@ -20,6 +20,11 @@
     "plugin:@coorpacademy/coorpacademy/prettier",
     "plugin:@coorpacademy/coorpacademy/react"
   ],
+  "rules": {
+    "fp/no-class": "off",
+    "react/prefer-stateless-function": "off",
+    "class-methods-use-this": "off"
+  },
   "parser": "babel-eslint",
   "settings": {
     "___import/ignore": ["node_modules", "\\.css$"]
