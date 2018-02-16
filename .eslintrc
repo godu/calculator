@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "plugins": [
+    "@coorpacademy/coorpacademy",
+    "flowtype",
+    "flowtype-errors",
+    "css-modules"
+  ],
+  "extends": [
+    "plugin:@coorpacademy/coorpacademy/ava",
+    "plugin:@coorpacademy/coorpacademy/core",
+    "plugin:@coorpacademy/coorpacademy/es20XX",
+    "plugin:@coorpacademy/coorpacademy/flowtype",
+    "plugin:@coorpacademy/coorpacademy/lodash-fp",
+    "plugin:@coorpacademy/coorpacademy/prettier",
+    "plugin:@coorpacademy/coorpacademy/react"
+  ],
+  "parser": "babel-eslint",
+  "settings": {
+    "___import/ignore": ["node_modules", "\\.css$"]
+  }
+}
