@@ -1,5 +1,5 @@
 import React from 'react';
-import {DIGIT, OPERATOR} from './shared/action';
+import {DIGIT, OPERATOR} from '../shared/action';
 
 const Grid = ({children}) => <div>{children}</div>;
 const Row = ({children}) => <div>{children}</div>;

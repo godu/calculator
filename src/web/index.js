@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import createStore from './shared/store';
-import {applyButton} from './shared/action';
+import createStore from '../shared/store';
+import {applyButton} from '../shared/action';
 import Container from './container';
 
 const observeStore = (store, onChange) => {

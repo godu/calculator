@@ -35,7 +35,7 @@ module.exports = {
   devtool: isProduction ? false : 'cheap-module-source-map',
 
   entry: {
-    app: join(__dirname, 'src/index.js')
+    app: join(__dirname, 'src/web/index.js')
   },
 
   output: {
@@ -50,7 +50,7 @@ module.exports = {
     hot: !isProduction,
     before: app => {
       app.get('/', (req, res, next) => {
-        readFileP(join(__dirname, 'src/index.html'), {encoding: 'utf8'})
+        readFileP(join(__dirname, 'src/web/index.html'), {encoding: 'utf8'})
           .then(index => {
             return template(index)(
               Object.assign(
