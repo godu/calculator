@@ -3,7 +3,7 @@ import App from './app';
 
 class Container extends PureComponent {
   render() {
-    return <App />;
+    return <App {...this.props} />;
   }
 }
 

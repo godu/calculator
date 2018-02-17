@@ -21,9 +21,10 @@
     "plugin:@coorpacademy/coorpacademy/react"
   ],
   "rules": {
+    "class-methods-use-this": "off",
     "fp/no-class": "off",
-    "react/prefer-stateless-function": "off",
-    "class-methods-use-this": "off"
+    "no-shadow": "off",
+    "react/prefer-stateless-function": "off"
   },
   "parser": "babel-eslint",
   "settings": {

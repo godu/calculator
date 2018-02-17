@@ -32,7 +32,7 @@ const postcssLoader = {
 };
 
 module.exports = {
-  devtool: isProduction ? null : 'cheap-module-source-map',
+  devtool: isProduction ? false : 'cheap-module-source-map',
 
   entry: {
     app: join(__dirname, 'src/index.js')
