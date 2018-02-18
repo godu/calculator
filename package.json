@@ -33,6 +33,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server",
+    "start:ios": "react-native run-ios",
+    "start:android": "react-native run-android",
     "prebuild": "rm -rf dist/*",
     "build": "webpack"
   },
