@@ -42,8 +42,6 @@ module.exports = {
     filename: '[name].js'
   },
 
-  mode: isProduction ? 'production' : 'development',
-
   devServer: {
     compress: true,
     port: 9000,
@@ -67,6 +65,10 @@ module.exports = {
     }
   },
 
+  mode: isProduction ? 'production' : 'development',
+  resolve: {
+    extensions: ['.web.wasm', '.web.mjs', '.web.js', '.web.json', '.wasm', '.mjs', '.js', '.json']
+  },
   module: {
     rules: [
       {

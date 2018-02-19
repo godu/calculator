@@ -1,10 +1,9 @@
 import React from 'react';
-import {DIGIT, OPERATOR} from '../shared/action';
-
-const Grid = ({children}) => <div>{children}</div>;
-const Row = ({children}) => <div>{children}</div>;
-const Display = ({children}) => <span>{children}</span>;
-const Button = ({onClick, children}) => <button onClick={onClick}>{children}</button>;
+import {DIGIT, OPERATOR} from '../action';
+import Grid from './grid';
+import Row from './row';
+import Display from './display';
+import Button from './button';
 
 const App = ({value, onClick}) => {
   return (

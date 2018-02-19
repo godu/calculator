@@ -1,6 +1,6 @@
 // @flow
 
 import {AppRegistry} from 'react-native';
-import App from './src/native/App';
+import App from './src/native/app';
 
 AppRegistry.registerComponent('calculator', () => App);

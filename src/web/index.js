@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import createStore from '../shared/store';
 import {applyButton} from '../shared/action';
-import Container from './container';
+import App from '../shared/views/app';
 
 const observeStore = (store, onChange) => {
   let currentState;
@@ -35,5 +35,5 @@ const mapStateToProps = state => {
 
 observeStore(store, state => {
   const props = mapStateToProps(state);
-  ReactDOM.render(<Container {...props} />, document.getElementById('root'));
+  ReactDOM.render(<App {...props} />, document.getElementById('root'));
 });
